@@ -1,0 +1,94 @@
+/* Basic CSS Reset */
+
+/* Box sizing rules */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles (bullet points) */
+ul, ol {
+    list-style: none;
+}
+
+/* Set default font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Remove underlines from links */
+a {
+    text-decoration: none;
+}
+
+/* Reset some elements to have no styling */
+button, input, optgroup, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    appearance: none;
+    resize: none;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo-img {
+    object-fit: cover;
+    border-radius: 50%;
+    max-height: 150px;
+    height: 100%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tag-line-heading {
+    text-align: center;
+    margin-top: .5rem;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.button-container {
+    margin-top: .8rem;
+}
+
+.join-button {
+    padding: 10px 40px;
+    border-radius: 8px;
+    background-color: rgb(41, 233, 111);
+    max-width: 250px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:300px) {
+    .join-button {
+        padding: 10px 20px;
+    }
+}
+
+/* Basic CSS Reset End */
